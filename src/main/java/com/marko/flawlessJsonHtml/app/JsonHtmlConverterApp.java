@@ -50,14 +50,15 @@ public  class JsonHtmlConverterApp {
     }
 
     private FileConfig parseArguments(String[] args) {
+        final Path outputFile = Paths.get(DEFAULT_OUTPUT_FILE);
         return switch (args.length) {
             case 0 -> new FileConfig(
                     Paths.get(DEFAULT_INPUT_FILE),
-                    Paths.get(DEFAULT_OUTPUT_FILE)
+                    outputFile
             );
             case 1 -> new FileConfig(
                     Paths.get(args[0]),
-                    Paths.get(DEFAULT_OUTPUT_FILE)
+                    outputFile
             );
             case 2 -> new FileConfig(
                     Paths.get(args[0]),

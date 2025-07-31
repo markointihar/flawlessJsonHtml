@@ -7,7 +7,6 @@ import java.util.logging.Logger;
 
 /**
  * main.java.com.marko.flawlessJsonHtml.Main application class for JSON to HTML conversion.
- *
  * Usage: java main.java.com.marko.flawlessJsonHtml.Main [input.json] [output.html]
  * If no arguments provided, defaults to "input.json" and "output.html"
  */

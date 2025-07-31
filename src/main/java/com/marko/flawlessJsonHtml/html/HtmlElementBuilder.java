@@ -62,7 +62,7 @@ public class HtmlElementBuilder {
 
         // Process elements in semantic order
         for (String tagName : BODY_ELEMENT_ORDER) {
-            if (body.has(tagName) && !isReservedKey(tagName)) {
+            if (body.has(tagName) && isReservedKey(tagName)) {
                 buildTag(tagName, body.get(tagName), html, indentLevel);
                 processedKeys.add(tagName);
             }
@@ -71,7 +71,7 @@ public class HtmlElementBuilder {
         // Process remaining elements
         for (Iterator<String> it = body.keys(); it.hasNext();) {
             String tagName = it.next();
-            if (!processedKeys.contains(tagName) && !isReservedKey(tagName)) {
+            if (!processedKeys.contains(tagName) && isReservedKey(tagName)) {
                 buildTag(tagName, body.get(tagName), html, indentLevel);
             }
         }
@@ -125,7 +125,7 @@ public class HtmlElementBuilder {
             // Build child elements
             for (Iterator<String> it = obj.keys(); it.hasNext();) {
                 String childKey = it.next();
-                if (!isReservedKey(childKey)) {
+                if (isReservedKey(childKey)) {
                     buildTag(childKey, obj.get(childKey), html, indentLevel + 1);
                 }
             }
@@ -178,6 +178,6 @@ public class HtmlElementBuilder {
     }
 
     private boolean isReservedKey(String key) {
-        return "attributes".equals(key);
+        return !"attributes".equals(key);
     }
 }

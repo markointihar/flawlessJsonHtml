@@ -9,7 +9,7 @@ import java.util.logging.Level;
 
 /**
  * Converts JSON documents to HTML format.
- *
+ * <p>
  * Expected JSON structure:
  * {
  *   "doctype": "html",
