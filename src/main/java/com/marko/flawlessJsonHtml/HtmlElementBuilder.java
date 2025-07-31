@@ -1,3 +1,5 @@
+package com.marko.flawlessJsonHtml;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

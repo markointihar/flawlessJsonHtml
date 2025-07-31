@@ -1,3 +1,5 @@
+package com.marko.flawlessJsonHtml;
+
 /**
  * Exception thrown when JSON to HTML conversion fails.
  */

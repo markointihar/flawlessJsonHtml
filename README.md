@@ -14,10 +14,10 @@ javac -cp "src/json-20070829.jar" src/*.java -d .
 
 ```bash
 # Osnovna uporaba (input.json → output.html)
-java -cp ".;src/json-20070829.jar" Main
+java -cp ".;src/json-20070829.jar" main.java.com.marko.flawlessJsonHtml.Main
 
 #Z uporabo argumentov
-java -cp ".;src/json-20070829.jar" Main input.json izkodek.html
+java -cp ".;src/json-20070829.jar" main.java.com.marko.flawlessJsonHtml.Main input.json izkodek.html
 ```
 
 ## JSON Struktura

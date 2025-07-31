@@ -1,3 +1,5 @@
+package com.marko.flawlessJsonHtml;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.logging.Logger;
