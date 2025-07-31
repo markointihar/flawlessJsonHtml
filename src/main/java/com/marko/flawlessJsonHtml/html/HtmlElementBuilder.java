@@ -1,4 +1,4 @@
-package com.marko.flawlessJsonHtml;
+package com.marko.flawlessJsonHtml.html;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -12,7 +12,7 @@ public class HtmlElementBuilder {
 
     private static final Logger LOGGER = Logger.getLogger(HtmlElementBuilder.class.getName());
 
-    // Use enum for better type safety
+
     private enum SelfClosingTag {
         META("meta"), LINK("link"), IMG("img"), BR("br"),
         HR("hr"), INPUT("input"), SOURCE("source"),

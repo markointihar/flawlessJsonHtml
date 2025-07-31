@@ -1,4 +1,4 @@
-package com.marko.flawlessJsonHtml;
+package com.marko.flawlessJsonHtml.converter;
 
 import java.nio.file.Path;
 

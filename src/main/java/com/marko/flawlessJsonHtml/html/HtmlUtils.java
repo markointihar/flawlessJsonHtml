@@ -1,4 +1,4 @@
-package com.marko.flawlessJsonHtml;
+package com.marko.flawlessJsonHtml.html;
 
 import org.json.JSONException;
 import org.json.JSONObject;

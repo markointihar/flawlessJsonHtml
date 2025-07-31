@@ -1,15 +1,9 @@
 package com.marko.flawlessJsonHtml;
 
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.marko.flawlessJsonHtml.app.JsonHtmlConverterApp;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import com.marko.flawlessJsonHtml.JsonHtmlConverter;
 
 /**
  * main.java.com.marko.flawlessJsonHtml.Main application class for JSON to HTML conversion.

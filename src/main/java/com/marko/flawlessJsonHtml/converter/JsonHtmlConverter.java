@@ -1,5 +1,7 @@
-package com.marko.flawlessJsonHtml;
+package com.marko.flawlessJsonHtml.converter;
 
+import com.marko.flawlessJsonHtml.html.HtmlElementBuilder;
+import com.marko.flawlessJsonHtml.html.HtmlUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.logging.Logger;

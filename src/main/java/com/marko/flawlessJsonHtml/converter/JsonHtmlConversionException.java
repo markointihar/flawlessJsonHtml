@@ -1,4 +1,4 @@
-package com.marko.flawlessJsonHtml;
+package com.marko.flawlessJsonHtml.converter;
 
 /**
  * Exception thrown when JSON to HTML conversion fails.

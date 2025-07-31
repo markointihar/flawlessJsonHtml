@@ -5,22 +5,30 @@ Java aplikacija, ki pretvori JSON datoteke v HTML strani.
 ## Namestitev
 
 1. Prenesite datoteke
-2. Kompajlirajte:
+2. Prenos knjižnic:
 ```bash
-javac -cp "src/json-20070829.jar" src/*.java -d .
+mvn clean compile
 ```
 
-## Uporaba
-
+# Uporaba
+Toplo priporočam zagon znotraj IntelliJ, če ni mogoče:
 ```bash
 # Osnovna uporaba (input.json → output.html)
-java -cp ".;src/json-20070829.jar" main.java.com.marko.flawlessJsonHtml.Main
+mvn exec:java
 
 #Z uporabo argumentov
-java -cp ".;src/json-20070829.jar" main.java.com.marko.flawlessJsonHtml.Main input.json izkodek.html
+mvn exec:java -Dexec.args="input.json output.html"
+```
+## Ustvarjanje JAR datoteke
+```bash
+mvn clean package
+```
+## Zagon JAR datoteke
+```bash
+java -jar target/json-html-converter-1.0.0-jar-with-dependencies.jar input.json output.html
 ```
 
-## JSON Struktura
+# JSON Struktura
 
 ```json
 {

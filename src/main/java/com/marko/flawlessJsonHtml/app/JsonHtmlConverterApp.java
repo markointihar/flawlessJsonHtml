@@ -1,6 +1,10 @@
-package com.marko.flawlessJsonHtml;
+package com.marko.flawlessJsonHtml.app;
 
 
+import com.marko.flawlessJsonHtml.converter.FileConfig;
+import com.marko.flawlessJsonHtml.converter.JsonHtmlConversionException;
+import com.marko.flawlessJsonHtml.converter.JsonHtmlConverter;
+import com.marko.flawlessJsonHtml.Main;
 import org.json.JSONException;
 import org.json.JSONObject;
 
